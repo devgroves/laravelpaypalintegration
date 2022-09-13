@@ -117,8 +117,8 @@ class PaymentController extends Controller
           
            Log::info($paypalOrderId);
         Log::info('order capture data : '.$status.'for'.$facilitorAccessToken.'response'.gettype($_capture_response['purchase_units'][0]['payments']['captures']));
-        //fetch the order
-       // window.location.href="{{URL('/checkout/init/order/response/message/')}}"+"/"+"{{$order_no}}";
+     
+      
                return response()->json($_capture_response);
     }
 

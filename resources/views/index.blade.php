@@ -28,7 +28,7 @@
           <div id="amount_err" style="display:none;"className="amount_err">
               <p  style="color:red;">Enter valid amount</p>
             </div>
-    	  <!-- <button class="w3-btn w3-blue" >Pay with PayPal</button> -->
+    	 
              <div id="paypal-button-container"></div>
 
           <script src="https://www.paypal.com/sdk/js?client-id=AViRRM7Mf1F7VAPEs7uKsID9utIQAhYP-3ie-9ZFi3gIod-Zh89UogXZdAlB61a_AguDgkByFBrYP3E_&currency=EUR"></script>
@@ -123,11 +123,11 @@
                           data:"order_no={{$order_no}}",
                           success:function(response) {
                             if(response.status == 'SUCCESS') {
-                              //  swal("Cancelled!", "Your Order cancelled!", "success");
+                             
                               swal("Cancelled!", "Your Order cancelled!", "success");
-                              //.then((value) => {
+                             
                                 window.location.href="{{URL('/myorders')}}";
-                              //});
+                              
                             }
                             else {
                               swal("Oops!", "Your Order cancellation Failed. Please contact Team!", "error");
@@ -174,7 +174,7 @@
 
        
 function myFunction(val) {
-//   alert("The input value has changed. The new value is: " + val);
+
 const paypalbtn=document.getElementById('paypal-button-container');
 
   console.log("The input value has changed. The new value is: " + val);

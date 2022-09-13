@@ -3,7 +3,7 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
-    <!-- <meta http-equiv="refresh" content="5;url=/index"> -->
+  
 </head>
 <style>
   body {
@@ -46,7 +46,7 @@
     font-size: 0.9em;
     font-family: sans-serif;
     min-width: 800px;
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+
 }
 .styled-table thead tr {
     
@@ -68,7 +68,7 @@
 </style>
 
   <script>
-//Using setTimeout to execute a function after 5 seconds.
+
 setTimeout(function () {                                
 window.location.href="{{URL('/')}}";
 }, 6000);
