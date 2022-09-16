@@ -31,9 +31,9 @@
     	 
              <div id="paypal-button-container"></div>
 
-          <script src="https://www.paypal.com/sdk/js?client-id=AViRRM7Mf1F7VAPEs7uKsID9utIQAhYP-3ie-9ZFi3gIod-Zh89UogXZdAlB61a_AguDgkByFBrYP3E_&currency=EUR"></script>
+          <script src="https://www.paypal.com/sdk/js?client-id=xxx &currency=EUR"></script>
            <?php
-                    $paypal_clientId = 'AViRRM7Mf1F7VAPEs7uKsID9utIQAhYP-3ie-9ZFi3gIod-Zh89UogXZdAlB61a_AguDgkByFBrYP3E_';
+                    $paypal_clientId = 'xxx';
                     $paypal_currencyType = 'EUR';
                   $d2 = new Datetime("now");
                     $order_no="order".$d2->format('U');  // Get the last order id
@@ -142,7 +142,7 @@
                     // Successful capture! For demo purposes:
                     console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
                     var transaction = orderData.purchase_units[0].payments.captures[0];
-                    window.location.href="{{URL('/suceess')}}"+"/"+"{{$order_no}}";
+                    window.location.href="{{URL('/success')}}"+"/"+"{{$order_no}}";
                 });
 
             },
